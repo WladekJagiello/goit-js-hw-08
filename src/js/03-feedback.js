@@ -27,6 +27,9 @@ formEl.addEventListener(
 
 formEl.addEventListener('submit', event => {
   event.preventDefault();
+  if (emailEl.value === '' || messageEl.value === '') {
+    return alert('Всі поля мають бути заповнені !');
+  }
   console.log(feedbackFormState);
   event.target.reset();
   feedbackFormState = { email: '', message: '' };
