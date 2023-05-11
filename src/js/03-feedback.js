@@ -8,8 +8,8 @@ let feedbackFormState = JSON.parse(
 ) || { email: '', message: '' };
 
 const savedData = () => {
-  emailEl.value = feedbackFormState.email || '';
-  messageEl.value = feedbackFormState.message || '';
+  emailEl.value = feedbackFormState.email;
+  messageEl.value = feedbackFormState.message;
 };
 
 savedData();
