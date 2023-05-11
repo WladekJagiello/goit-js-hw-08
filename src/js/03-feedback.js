@@ -28,6 +28,6 @@ formEl.addEventListener(
 formEl.addEventListener('submit', event => {
   event.preventDefault();
   console.log(feedbackFormState);
-  event.currentTarget.reset();
+  event.target.reset();
   feedbackFormState = { email: '', message: '' };
 });
