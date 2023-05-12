@@ -5,13 +5,7 @@ let feedbackFormState = JSON.parse(
   localStorage.getItem('feedback-form-state')
 ) || { email: '', message: '' };
 
-const savedData = () => {
-  formEl.email.value = feedbackFormState.email;
-  formEl.message.value = feedbackFormState.message;
-};
-
-savedData();
-
+formEl.value = feedbackFormState;
 formEl.addEventListener(
   'input',
   throttle(event => {
