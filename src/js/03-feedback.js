@@ -5,7 +5,8 @@ let feedbackFormState = JSON.parse(
   localStorage.getItem('feedback-form-state')
 ) || { email: '', message: '' };
 
-formEl.value = feedbackFormState;
+formEl.email.value = feedbackFormState.email;
+formEl.message.value = feedbackFormState.message;
 formEl.addEventListener(
   'input',
   throttle(event => {
