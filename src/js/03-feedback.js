@@ -33,6 +33,5 @@ formEl.addEventListener('submit', event => {
   console.log(feedbackFormState);
   event.target.reset();
   feedbackFormState = { email: '', message: '' };
+  localStorage.removeItem('feedback-form-state');
 });
-
-localStorage.removeItem('feedback-form-state');
