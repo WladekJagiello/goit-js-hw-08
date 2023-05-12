@@ -34,3 +34,5 @@ formEl.addEventListener('submit', event => {
   event.target.reset();
   feedbackFormState = { email: '', message: '' };
 });
+
+clear();
