@@ -35,4 +35,4 @@ formEl.addEventListener('submit', event => {
   feedbackFormState = { email: '', message: '' };
 });
 
-clear();
+localStorage.clear();
